@@ -57,7 +57,15 @@ document.addEventListener('DOMContentLoaded', function () {
       const fileNamePattern = `*_${formattedDate.replace(/-/g, '_')}.pdf`;
   
       // Simulate fetching files (replace with actual file fetching logic)
-      const files = [`THE_HINDU_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`]; // Example file
+      const files = [ 
+                     `English_Madhyam_Free_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_SSC_Premium_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_Story_Premium_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_Bank_Premium_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+          
+                     `THE_HINDU_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `INDIAN_EXPRESS_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+                    ]; // Example file
       fileListElement.innerHTML = '';
   
       if (files.length > 0) {
