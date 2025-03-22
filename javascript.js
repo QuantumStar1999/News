@@ -57,7 +57,19 @@ document.addEventListener('DOMContentLoaded', function () {
       const fileNamePattern = `*_${formattedDate.replace(/-/g, '_')}.pdf`;
   
       // Simulate fetching files (replace with actual file fetching logic)
-      const files = [ 
+      switch (dayOfWeek) {
+        case 0: // Sunday
+            files = [
+                     `English_Madhyam_Weekly_Vocab_Free_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_Weekly_Vocab_Premium_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_Weekly_Idioms_Premium__${formattedDate.replace(/-/g, '_')}.pdf`,
+          
+                     `THE_HINDU_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `INDIAN_EXPRESS_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+            ];
+            break;
+        case 6: // Saturday
+            files = [
                      `English_Madhyam_Free_${formattedDate.replace(/-/g, '_')}.pdf`,
                      `English_Madhyam_SSC_Premium_${formattedDate.replace(/-/g, '_')}.pdf`,
                      `English_Madhyam_Story_Premium_${formattedDate.replace(/-/g, '_')}.pdf`,
@@ -65,7 +77,21 @@ document.addEventListener('DOMContentLoaded', function () {
           
                      `THE_HINDU_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
                      `INDIAN_EXPRESS_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
-                    ]; // Example file
+            ];
+            break;
+        default: // Weekdays (Monday to Friday)
+            files = [
+                     `English_Madhyam_Free_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_SSC_Premium_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_Story_Premium_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `English_Madhyam_Bank_Premium_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+          
+                     `THE_HINDU_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+                     `INDIAN_EXPRESS_UPSC_IAS_EDITION_HD_${formattedDate.replace(/-/g, '_')}.pdf`,
+            ];
+            break;
+        }
+      
       fileListElement.innerHTML = '';
   
       if (files.length > 0) {
