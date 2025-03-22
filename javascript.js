@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayFilesForDate(date) {
       const formattedDate = formatDate(date);
       const fileNamePattern = `*_${formattedDate.replace(/-/g, '_')}.pdf`;
+      const dayOfWeek = date.getDay();
       let files;
       // Simulate fetching files (replace with actual file fetching logic)
       switch (dayOfWeek) {
@@ -91,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ];
             break;
         }
-        
+    
       fileListElement.innerHTML = '';
   
       if (files.length > 0) {
