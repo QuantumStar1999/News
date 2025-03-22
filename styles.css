@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Calendar Controls */
+  .calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .calendar-controls select,
+  .calendar-controls input,
+  .calendar-controls button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .calendar-controls select {
+    background: #fff;
+  }
+  
+  .calendar-controls input {
+    width: 100px;
+  }
+  
+  .calendar-controls button {
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .calendar-controls button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Calendar */
+  .calendar-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .calendar {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .days-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .days-header span {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .calendar-days span {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .calendar-days span:hover {
+    background: #f0f0f0;
+  }
+  
+  .calendar-days .selected {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  /* File List */
+  .file-list {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .file-list h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .file-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .file-list li {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .file-list a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .file-list a:hover {
+    text-decoration: underline;
+  }
+  .calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-controls button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .calendar-controls button:hover {
+    background: #0056b3;
+  }
+  
+  .calendar-controls select,
+  .calendar-controls input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+ .download-symbol {
+    margin-left: 8px;
+    font-size: 0.9em;
+    vertical-align: middle;
+  }
+/* Responsive Design */
