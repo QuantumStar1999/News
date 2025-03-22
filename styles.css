@@ -193,4 +193,20 @@ body {
     font-size: 0.9em;
     vertical-align: middle;
   }
-/* Responsive Design */
+
+/* View Button Styling */
+  .view-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background: #218838;
+  }
+
