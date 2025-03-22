@@ -67,7 +67,15 @@ document.addEventListener('DOMContentLoaded', function () {
           link.href = `data/${file}`;
           link.innerHTML = `${file} <span class="download-symbol">⬇️</span>`;
           link.download = file;
+
+          const viewButton = document.createElement('button');
+            viewButton.textContent = 'View';
+            viewButton.classList.add('view-button');
+            viewButton.addEventListener('click', () => {
+            window.open(`data/${file}`, '_blank'); // Open file in a new tab
+            });
           listItem.appendChild(link);
+          listItem.appendChild(viewButton);
           fileListElement.appendChild(listItem);
         });
       } else {
